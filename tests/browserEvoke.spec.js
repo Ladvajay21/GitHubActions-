@@ -7,7 +7,7 @@ await page.goto('https://demo.haroldwaste.com/authentication');
   const Email = page.locator('[data-test-id="input-email"]');
   const Password = page.locator('[data-test-id="input-password"]')
   const login = page.locator ('[data-test-id="signin"]');
-  //const toBehedgedPage = page.locator ('link', { name: 'Hedging contracts' });
+  const toBehedgedPage = page.locator ('link', { name: 'Hedging contracts' });
   
   
   // Get the URL of the page
