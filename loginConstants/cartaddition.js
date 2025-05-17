@@ -6,7 +6,7 @@ class cartaddition {
 constructor(page) {
 
     this.page = page;
-    this.textContext = page.locator(".card-body b");
+   // this.textContext = page.locator(".card-body b");
     this.product1 = page.locator ("//body/app-root/app-dashboard[@class='ng-star-inserted']/section[@id='products']/div[@class='container']/div[@class='row']/div[1]/div[1]/div[1]");
     this.cartClick = page.locator ("//div[@class='container']//div[1]//div[1]//div[1]//button[2]");
     this.addToCart = page.locator("[routerlink*='cart']");
@@ -17,9 +17,9 @@ constructor(page) {
 
 async additionToCart (textContext)
 {
-    await this.textContext.allTextContents();
+    //await this.textContext.allTextContents();
     console.log(this.textContext);
-    await this.textContext.count();
+    //await this.textContext.count();
     await this.product1.click();
     await this.cartClick.click ();
     await this.addToCart.click ();
