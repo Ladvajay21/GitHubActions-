@@ -13,6 +13,7 @@ test('browserEvoke', async ({ page }) => {
   await Password.getByRole('textbox').fill('Jay1234');
   await login.click();
   await page.pause(5000);
+  await this.page.waitForTimeout(5000);
  
 
 
