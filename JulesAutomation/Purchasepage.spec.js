@@ -12,6 +12,7 @@ test('browserEvoke', async ({ page }) => {
   await Email.getByRole('textbox').fill('jay.ladva@julesai.com');
   await Password.getByRole('textbox').fill('Jay1234');
   await login.click();
+  await page.pause(5000);
  
 
 
